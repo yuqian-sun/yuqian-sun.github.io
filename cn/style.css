@@ -9,26 +9,96 @@ body {
   text-align: center;
 }
 
-.section {
+/* 固定页眉 */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+header nav ul {
+  list-style: none;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
-/* 针对第一页左对齐的样式 */
-.left-align {
-  align-items: flex-start;
-  text-align: left;
-  padding-left: 10%;
+header nav ul li {
+  margin: 0 15px;
 }
 
-h1, h2 {
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
   font-weight: 700;
 }
 
-p {
-  font-size: 1.1rem;
-  line-height: 1.5;
+/* fullPage.js 每一页 */
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%; /* 确保 section 足够宽 */
+  position: relative;
+  padding-top: 50px; /* 避免页眉遮挡 */
+}
+
+/* 主要的容器，调整宽度 */
+.hero-wrapper {
+  position: relative;
+  width: 90vw;  /* 扩大到 80% 确保足够宽 */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 让 hero-initial 居中 */
+}
+
+/* 初始状态：大标题 */
+.hero-initial {
+  width: 100%; /* 扩大原始文本区域 */
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  transform: translateX(0);
+  opacity: 1;
+  text-align: center;
+  font-size: 2.5rem; /* 调整字体大小 */
+  font-weight: bold;
+  white-space: nowrap; /* 防止换行 */
+}
+
+/* 副标题 */
+.subtitle {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* 额外信息文本框 */
+.hero-details {
+  transition: opacity 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: left;
+  width: 40%; /* 增大信息框 */
+  padding: 20px;
+  /* background: rgba(255, 255, 255, 0.7); /* 轻微背景增强可读性 */
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+  /* border-radius: 10px; */
+  font-size: 1.2rem;
+}
+
+/* 鼠标进入时：大标题移动，信息框淡入 */
+.hero-wrapper.hovered .hero-initial {
+  transform: translateX(-20%);
+}
+
+.hero-wrapper.hovered .hero-details {
+  opacity: 1;
 }

@@ -1,38 +1,66 @@
 <!DOCTYPE html>
 <html lang="zh">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>我的作品集</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-  <!-- 引入 fullPage.js 的 CSS 和 JS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"></script>
-</head>
-<body>
-  <div id="fullpage">
-    <!-- 第一页：我是谁谁谁，文字靠左 -->
-    <div class="section left-align">
-      <h1>我是谁谁谁</h1>
-    </div>
-    <!-- 第二页：我的团队项目 -->
-    <div class="section">
-      <h2>我的团队项目</h2>
-      <p>这里是我的团队项目介绍...</p>
-    </div>
-    <!-- 第三页：我的个人项目 -->
-    <div class="section">
-      <h2>我的个人项目</h2>
-      <p>这里是我的个人项目介绍...</p>
-    </div>
-    <!-- 第四页：联系方式 -->
-    <div class="section">
-      <h2>联系方式</h2>
-      <p>这里是我的联系方式...</p>
-    </div>
-  </div>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>我的作品集</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js" defer></script>
+		<!-- 引入 fullPage.js 的 CSS 和 JS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"></script>
+	</head>
+	<body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a data-menuanchor="about" href="#about">关于我</a></li>
+                    <li><a data-menuanchor="works" href="#works">作品</a></li>
+                    <!--<li><a data-menuanchor="personalWorks" href="#personalWorks">个人作品</a></li>-->
+                    <li><a data-menuanchor="contact" href="#contact">联系方式</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div id="fullpage">
+            <!-- 第一页：关于我 -->
+            <div class="section" data-anchor="about">
+                <div class="hero-wrapper">
+                    <!-- 初始状态：大标题和副标题 -->
+                    <div class="hero-initial">
+                        <h1>孙宇芊</h1>
+                        <p class="subtitle">技术策划</p>
+                    </div>
+                    <!-- 鼠标 hover 后显示的额外信息 -->
+                    <div class="hero-details">
+                        <p>你好！我是一名热衷于游戏的开发者和策划。我擅长使用Unity、C#、数据分析、跨平台开发等技术，并且喜欢将创意与技术结合，快速迭代，推动项目的创新与进步。</p>
+                        <p>2025年纽约大学游戏中心硕士毕业<br>2023年上海纽约大学计算机科学学士</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 第二页：我的团队项目 -->
+            <div class="section" data-anchor="works">
+                <h2>我的合作项目</h2>
+                <p>这里是我的团队项目介绍...</p>
+            </div>
+            
+            <!-- 第三页：我的个人项目 -->
+            <div class="section" data-anchor="personalWorks">
+                <h2>我的个人项目</h2>
+                <p>这里是我的个人项目介绍...</p>
+            </div>
+            
+            <!-- 第四页：联系方式 -->
+            <div class="section" data-anchor="contact">
+                <h2>联系方式</h2>
+                <p>这里是我的联系方式...</p>
+            </div>
+        </div>
+	</body>
 </html>
+
+
+
 
     
