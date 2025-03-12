@@ -106,22 +106,32 @@ header nav ul li a {
 
 /* 项目容器样式 */
 .projects-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 列 */
+  gap: 20px; /* 间距 */
+  width: 100%; /* 设置宽度为 80% */
+  max-width: 1200px; /* 限制最大宽度 */
+  margin: 0 auto; /* 居中 */
+  margin-top: 30px;
+}
+.projects-container2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 列 */
+  gap: 20px; /* 间距 */
+  width: 100%; /* 设置宽度为 80% */
+  max-width: 800px; /* 限制最大宽度 */
+  margin: 0 auto; /* 居中 */
   margin-top: 30px;
 }
 
-/* 项目卡片样式 */
 .project-card {
-  flex: 0 0 calc(33.333% - 20px);
   background-color: #fff;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
+
 
 .project-card2 {
   flex: 0 0 calc(50% - 20px);
