@@ -1,0 +1,170 @@
+body {
+    font-family: "SimSun", "宋体", serif;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.info, .experience {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px; }
+
+    .back-button {
+        position: fixed;
+        top: 40px; /* 上移一些 */
+        left: 50px; /* 再往左一点 */
+        padding: 8px 16px;
+        /*background-color: #f4f4f4; /* 默认背景为淡灰色 */
+        color: #333; /* 文字颜色为深灰色 */
+        border-radius: 5px;
+        font-size: 16px;
+        text-decoration: none; /* 去掉下划线 */
+        transition: background-color 0.3s ease, color 0.3s ease;
+        z-index: 999;
+        /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); 添加轻微阴影，提升立体感 */
+    }
+    
+    .back-button:hover {
+        /* background-color: #e0e0e0; hover 时变为更淡的灰色 */
+        color: #878484; /* 文字颜色稍微加深 */
+    }
+
+/* 主内容 */
+.content {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px; /* 左右间距 */
+    margin-top: 100px; /* 与返回按钮间距 */
+    margin-left: -20px;  /* 让分割线向左扩展 */
+    margin-right: -20px; /* 让分割线向右扩展 */
+}
+
+.content-border{
+    border-bottom: 2px solid #ccc; /* 添加下边框作为分割线 */
+    padding-bottom: 80px; /* 控制分割线与内容的距离 */
+    margin-left: -40px;  /* 让分割线向左扩展 */
+    margin-right: -40px; /* 让分割线向右扩展 */
+}
+
+/* 左侧图片 */
+.left {
+    width: 60%;
+}
+
+.left img {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px;
+    margin-top: 25px; /* 图片上方空隙 */
+}
+
+/* 右侧内容 */
+.right {
+    width: 40%;
+}
+
+/* 标题和制作时间 */
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* 确保标题垂直对齐 */
+    margin-bottom: 0; /* 移除底部间距 */
+}
+
+.game-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0; /* 移除标题下方间距 */
+}
+
+.production-time {
+    font-size: 14px;
+    color: #777;
+    margin-top: 40px; /* 取消上方的空隙 */
+}
+
+/* 角色和团队人数 */
+.role-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0; /* 确保没有额外的顶部间距 */
+}
+
+.role {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 0; /* 取消底部间距 */
+}
+
+.team-size {
+    font-size: 14px;
+    color: #777;
+    margin-top: 20px; /* 取消上方的空隙 */
+}
+
+/* 描述文字 */
+.description {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.6;
+}
+
+.tasks {
+    margin-top: 70px;
+}
+
+.tasks h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: flex-start;
+}
+
+.task-left {
+    width: 60%; /* 左侧宽度 */
+}
+
+.task-left h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.task-left p {
+    font-size: 16px;
+    color: #555;
+}
+
+.task-right {
+    width: 35%; /* 右侧宽度 */
+}
+
+.task-right img {
+    width: 100%; /* 图片宽度 */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.task-right p {
+    font-size: 14px;
+    color: #777;
+}
+
+
+    

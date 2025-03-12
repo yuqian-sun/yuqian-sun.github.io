@@ -137,6 +137,10 @@ header nav ul li a {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
+.project-card2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
 
 /* 图片容器 */
 .project-image-container {
@@ -158,6 +162,10 @@ header nav ul li a {
   transform: scale(1.05);
 }
 
+
+.project-card2:hover .project-image {
+  transform: scale(1.05);
+}
 /* 项目信息样式 */
 .project-info {
   padding: 15px;
@@ -187,3 +195,45 @@ header nav ul li a {
     flex: 0 0 100%;
   }
 }
+
+@media (max-width: 992px) {
+  .project-card2 {
+    flex: 0 0 calc(50% - 15px);
+  }
+}
+
+@media (max-width: 576px) {
+  .project-card2 {
+    flex: 0 0 100%;
+  }
+}
+
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-list i {
+  margin-right: 8px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.contact-list a {
+  text-decoration: none;
+  color: #0073b1;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contact-list a:hover {
+  color: #004182;
+}
+

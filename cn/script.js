@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     new fullpage("#fullpage", {
         autoScrolling: true,
         navigation: true,
+        fitToSection: true,
         navigationPosition: "right",
         scrollingSpeed: 700,
 

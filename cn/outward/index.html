@@ -3,39 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的项目</title>
+    <link rel="stylesheet" href="style.css">
+
+    <title>病房之外</title>
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; }
-        h1 { text-align: center; }
-        img { width: 100%; border-radius: 10px; }
-        .info, .experience { background: #f4f4f4; padding: 15px; border-radius: 8px; margin-top: 20px; }
-        a { color: blue; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+
     </style>
 </head>
 <body>
 
-    <h1>我的项目</h1>
-    <img src="https://via.placeholder.com/600x300" alt="项目图片">
-    <p>这是一个关于 XX 的项目，使用了 XX 技术，目标是解决 XX 问题。</p>
+    <!-- 返回按钮 -->
+    <a href="/cn/#works" class="back-button">← 返回</a>
 
-    <div class="info">
-        <h2>项目详情</h2>
-        <ul>
-            <li><strong>技术栈：</strong>HTML, CSS, JavaScript</li>
-            <li><strong>开发时间：</strong>202X 年 X 月</li>
-            <li><strong>项目链接：</strong><a href="#">点击查看</a></li>
-        </ul>
-    </div>
+    <div class="content-border">
+    <div class="content">
+        <!-- 左侧图片 -->
+        <div class="left">
+            <img src="main.png" alt="游戏封面">
+        </div>
 
-    <div class="experience">
-        <h2>我的经历</h2>
-        <ul>
-            <li>项目 A：负责 XX 功能开发</li>
-            <li>项目 B：优化 XX，提高性能 XX%</li>
-            <li>项目 C：使用 XX 技术构建 XX 系统</li>
-        </ul>
+        <!-- 右侧内容 -->
+        <div class="right">
+            <div class="game-header">
+                <h2 class="game-title">病房之外</h2>
+                <span class="production-time">2024.2-5</span>
+            </div>
+            <div class="role-info">
+                <p class="role">技术策划 游戏策划</p>
+                <span class="team-size">团队人数：4人</span>
+            </div>
+            <p class="description">
+                病房之外（Outward）是一款采用固定视角的3D游戏，角色和场景元素使用2D资产。
+                你将扮演蕾拉（Layla），她目前正身处于前好友阿尔莫斯（Almos）的梦境中。多年前，一场悲剧性事件使你们的关系变得紧张，最终导致你们彼此断了联系。
+                现在，在那场悲剧事件的周年纪念日，你发现自己进入了阿尔莫斯的梦境，必须在梦境中重现那天晚上发生的事情，以及在你们停止交流后，阿尔莫斯所经历的一切。
+            </p>
+        </div>
     </div>
+</div>
+    <div class="tasks">
+        <h2>我干的事情</h2>
+    
+        <!-- 任务 1 -->
+        <div class="task">
+            <div class="task-left">
+                <h3>## 1 设计游戏的第4阶段，制作擦除画作的原型</h3>
+                <p>根据进行设计，并将它原型实现</p>
+            </div>
+            <div class="task-right">
+                <img src="https://via.placeholder.com/200" alt="任务 1 的图片">
+                <p>任务 1 的详细说明，解释这项工作的背景、流程或成果。</p>
+            </div>
+        </div>
+    
+        <!-- 任务 2 -->
+        <div class="task">
+            <div class="task-left">
+                <h3>## 2 制作遍地生花的原型</h3>
+                <p>利用L-system制作植物程序生成的工具，可以进行多参数的调试</p>
+            </div>
+            <div class="task-right">
+                <img src="https://via.placeholder.com/200" alt="任务 2 的图片">
+                <p>任务 2 的详细说明，解释这项工作的背景、流程或成果。</p>
+            </div>
+        </div>
+
+    </div>
+    
 
 </body>
+
 </html>
